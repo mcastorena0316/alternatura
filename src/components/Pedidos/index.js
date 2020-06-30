@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Pedidos = () => (
-  <section>
+  <section id="page-wrap">
     <h2>Tus pedidos</h2>
     <div className="pedidos">
       {/* Esta info debe de ser bajada de database */}

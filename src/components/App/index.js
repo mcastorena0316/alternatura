@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Pedidos from '../Pedidos';
 import Header from '../Header';
-import Menu from '../Menu';
+import Sidebar from '../Sidebar';
 import Main from '../Main';
 import './App.css';
 
@@ -14,7 +14,7 @@ const App = () => (
   <Router>
     <div className="App">
       <Header />
-      <Menu />
+      <Sidebar />
       <Switch>
         <Route
           exact
