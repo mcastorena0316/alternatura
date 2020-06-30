@@ -5,7 +5,7 @@ import './Sidebar.css';
 
 const SideBar = () => (
   <Menu>
-    <a className="menu-item" href="/laravel">
+    <a className="menu-item" href="/">
       Categorias
     </a>
 
