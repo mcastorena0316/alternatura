@@ -2,6 +2,64 @@ main {
     background-color: #e6dfc7;
 }
 
+.mas-vendidos {
+    background-color: white;
+    margin: 5px;
+}
+
+.mas-vendidos h4 {
+    padding-top: 15px
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    flex: 1 0 15%; 
+    margin: 5px;
+    height: 100%;
+    position:relative;
+}
+
+.producto img {
+    width:80%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity:1;
+}
+
+.producto:hover img {
+    opacity: 0.3;  
+}
+
+.producto p {
+    font-size: 12px;
+    width:100%;
+}
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle p {
+    font-size:40px;
+}
+
+.producto:hover .middle{
+    opacity:1;
+}
+
+
 .promos {
     display:flex;
     flex-wrap: wrap;
