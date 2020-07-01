@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import promo from './promo1.jpg';
 
-const Promo = ({
+const ProductoGrande = ({
   nombre, descripcion, precio, categoria, descuento,
 }) => (
   <div className="una-promo">
@@ -25,7 +25,7 @@ const Promo = ({
   </div>
 );
 
-Promo.propTypes = {
+ProductoGrande.propTypes = {
   nombre: PropTypes.string,
   descripcion: PropTypes.string,
   precio: PropTypes.string,
@@ -33,11 +33,11 @@ Promo.propTypes = {
   descuento: PropTypes.string,
 };
 
-Promo.defaultProps = {
+ProductoGrande.defaultProps = {
   nombre: 'Lorem Impsum',
   descripcion: 'lorem ipsum dolor sit',
   precio: 'Ahora $70',
   categoria: 'OTROS',
   descuento: '-0%',
 };
-export default Promo;
+export default ProductoGrande;

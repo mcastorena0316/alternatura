@@ -1,0 +1,53 @@
+.seccion4p {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.una-promo {
+    flex: 1 0 21%; 
+    margin: 5px;
+    height: 100%;
+    background: white;
+}
+
+.una-promo h3 {
+    font-size: 20px;
+    color: darkolivegreen;
+    text-align: left;
+    margin-left: 30px
+}
+
+.una-promo img {
+    width:80%;
+    cursor:pointer;
+}
+
+.una-promo .descripcion {
+    color: darkgreen;
+    margin: 6px;
+    padding: 10px;
+    font-size: 21px;
+}
+
+.una-promo .precio {
+    font-size: 25px;
+    text-align: left;
+    margin: 2px 2px 3px 30px;
+}
+
+.una-promo .precio span {
+    color: red;
+    font-size: 21px;
+}
+
+.una-promo .cat-des {
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+
+.una-promo .cat-des p {
+    cursor:pointer;
+}

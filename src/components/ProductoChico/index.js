@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Producto = ({ image }) => (
+const ProductoChico = ({ image }) => (
   <div className="producto">
     <img src={image} alt="example" />
     <p>por NombreTienda</p>
@@ -11,8 +11,8 @@ const Producto = ({ image }) => (
   </div>
 );
 
-Producto.propTypes = {
+ProductoChico.propTypes = {
   image: PropTypes.string.isRequired,
 };
 
-export default Producto;
+export default ProductoChico;

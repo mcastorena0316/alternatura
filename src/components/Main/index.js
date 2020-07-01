@@ -1,37 +1,16 @@
 import React from 'react';
-import Promo from '../Promo';
-import Producto from '../Producto';
-import example from './example1.jpg';
-import example2 from './example2.jpg';
-import example3 from './example3.jpg';
-
+import Seccion6P from '../Seccion6P';
+import Seccion4P from '../Seccion4P';
 import './Main.css';
 
 const Main = () => (
   <main id="page-wrap">
-    <div className="mas-vendidos">
-      <h4>Los mas vendidos</h4>
-      <div className="productos">
-        <Producto image={example} />
-        <Producto image={example2} />
-        <Producto image={example3} />
-        <Producto image={example} />
-        <Producto image={example2} />
-        <Producto image={example3} />
-      </div>
-    </div>
-    <div className="promos">
-      <Promo
-        nombre="Oferta del dia"
-        descripcion="Jabon a base de eucalipto"
-        precio="Ahora $75 mxn"
-        categoria="BELLEZA"
-        descuento="-20%"
-      />
-      <Promo />
-      <Promo />
-      <Promo />
-    </div>
+
+    <Seccion6P nombre="Los mas vendidos" arrayimages={['1QD4FW3/example1', 'Y7Xhd4d/example2.jpg', 'wpwLtm7/example3.jpg']} />
+    <Seccion4P />
+    <Seccion6P nombre="Basado en lo que viste" arrayimages={['1QD4FW3/example1', 'Y7Xhd4d/example2.jpg', 'wpwLtm7/example3.jpg']} />
+    <Seccion6P nombre="Conoce a nuestros especialistas" arrayimages={['bWQpkDq/people3.jpg', 'z4TfbCm/people2.jpg', '0hL8Jz2/people1.jpg']} />
+    <Seccion4P />
   </main>
 );
 export default Main;

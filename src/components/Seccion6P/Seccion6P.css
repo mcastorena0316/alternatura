@@ -1,0 +1,36 @@
+.seccion6p {
+    background-color: white;
+    margin: 5px;
+}
+
+.seccion6p h4 {
+    padding-top: 15px
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    flex: 1 0 15%; 
+    margin: 5px;
+    height: 100%;
+    position:relative;
+}
+
+.producto img {
+    width:80%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity:1;
+}
+
+.producto:hover img {
+    opacity: 0.3;  
+}
+
+.producto p {
+    font-size: 12px;
+    width:100%;
+}
