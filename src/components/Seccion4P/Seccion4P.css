@@ -5,35 +5,40 @@
 }
 
 .una-promo {
-    flex: 1 0 21%; 
-    margin: 5px;
-    height: 100%;
+    flex: 1 0 19%; 
+    margin: 6px 10px;
+    height: fit-content;
     background: white;
+    transition: transform .2s;
+}
+
+.una-promo:hover {
+    transform: scale(1.01)
 }
 
 .una-promo h3 {
     font-size: 20px;
-    color: darkolivegreen;
-    text-align: left;
-    margin-left: 30px
+    text-align: center;
 }
 
 .una-promo img {
     width:80%;
     cursor:pointer;
+    height: 175px;
 }
 
 .una-promo .descripcion {
-    color: darkgreen;
+    color: darkolivegreen;
     margin: 6px;
     padding: 10px;
-    font-size: 21px;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .una-promo .precio {
-    font-size: 25px;
-    text-align: left;
-    margin: 2px 2px 3px 30px;
+    font-size: 24px;
+    text-align: center;
+    margin: 2px 3px;
 }
 
 .una-promo .precio span {
@@ -50,4 +55,12 @@
 
 .una-promo .cat-des p {
     cursor:pointer;
+}
+
+.una-promo .cat-des p:first-child:hover {
+    color: purple;
+}
+
+.una-promo .cat-des p:last-child:hover {
+    text-decoration-line: underline;
 }

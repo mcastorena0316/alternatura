@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import promo from './promo1.jpg';
 
 const ProductoGrande = ({
-  nombre, descripcion, precio, categoria, descuento,
+  nombre, descripcion, precio, categoria, descuento, imagen
 }) => (
   <div className="una-promo">
     <h3>{nombre}</h3>
-    <img src={promo} alt="promo" />
+    <img src={`https://i.ibb.co/${imagen}`} alt="promo" />
     <p className="descripcion">{descripcion}</p>
     <p className="precio">
       {precio}
@@ -31,6 +30,7 @@ ProductoGrande.propTypes = {
   precio: PropTypes.string,
   categoria: PropTypes.string,
   descuento: PropTypes.string,
+  imagen: PropTypes.string.isRequired,
 };
 
 ProductoGrande.defaultProps = {
