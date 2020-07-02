@@ -4,22 +4,13 @@ import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
 
 class SideBar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       open: false,
       isOpen: false,
     };
   }
-
-  // componentDidMount() {
-  //   const { isOpen } = this.state;
-  //   if (isOpen) {
-  //     document.getElementsByClassName('App').style.scroll = 'hidden';
-  //   }
-  // }
-
-  // isMenuOpen = (state) => state.isOpen;
 
    handleButtonClick = () => {
      const { open } = this.state;
@@ -34,17 +25,19 @@ class SideBar extends React.Component {
         isOpen: !isOpen,
       });
       if (isOpen) {
-        document.getElementsByClassName('App').style.scroll = 'hidden';
+        document.body.setAttribute('style', 'overflow:scroll;');
+      } else {
+        document.body.setAttribute('style', 'overflow:hidden;');
       }
     }
 
     render() {
       const { open } = this.state;
       return (
-        <Menu>
-          <div className="container">
+        <Menu onStateChange={this.hideScroll}>
+          <div className="container" id="bm-item">
             <span className="menu-item">Categorias</span>
-            <button type="button" onClick={this.handleButtonClick}><i className="fa fa-caret-down" aria-hidden="true" /></button>
+            <button type="button" onClick={this.handleButtonClick} id="button-click"><i className="fa fa-caret-down" aria-hidden="true" /></button>
             {open && (
             <div className="dropdown">
               <ul>

@@ -15,7 +15,7 @@ const App = () => (
   <Router>
     <div className="App" id="App">
       <Header />
-      <Sidebar />
+      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"}/>
       <Footer />
       <Switch>
         <Route
