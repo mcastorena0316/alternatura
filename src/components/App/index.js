@@ -8,13 +8,15 @@ import Pedidos from '../Pedidos';
 import Header from '../Header';
 import Sidebar from '../Sidebar';
 import Main from '../Main';
+import Footer from '../Footer';
 import './App.css';
 
 const App = () => (
   <Router>
-    <div className="App">
+    <div className="App" id="App">
       <Header />
       <Sidebar />
+      <Footer />
       <Switch>
         <Route
           exact

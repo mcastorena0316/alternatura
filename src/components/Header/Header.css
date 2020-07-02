@@ -6,6 +6,40 @@ header {
     justify-content: space-between;
 }
 
+.search {
+    display:flex;
+    width: 33%;
+}
+
+.search-bar {
+    width: 100%;
+    border: 3px solid #726046;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color:  #726046;
+    background-color: #efede6;
+
+}
+
+.search-bar:focus {
+    color: #726046;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid  #726046;
+    background:  #726046;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .logo {
     height: 100%;
 }

@@ -8,8 +8,14 @@ const Header = () => (
     <div className="logo">
       <Link to="/"><img src={title} alt="alternatura" /></Link>
     </div>
+
+    <div className="search">
+      <input type="text" placeholder="Search" className="search-bar" />
+      <button type="button" className="searchButton">
+        <i className="fa fa-search" />
+      </button>
+    </div>
     <div className="icons">
-      <i className="fa fa-search" aria-hidden="true" />
       <i className="fa fa-bell" aria-hidden="true" />
       <i className="fa fa-comment" aria-hidden="true" />
       <i className="fa fa-shopping-cart" aria-hidden="true" />

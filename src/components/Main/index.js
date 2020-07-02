@@ -4,7 +4,7 @@ import Seccion4P from '../Seccion4P';
 import './Main.css';
 
 const Main = () => (
-  <main id="page-wrap">
+  <main id="page-wrap" className="page-wrap">
 
     <Seccion6P nombre="Los mas vendidos" arrayimages={['1QD4FW3/example1', 'Y7Xhd4d/example2.jpg', 'wpwLtm7/example3.jpg']} />
     <Seccion4P

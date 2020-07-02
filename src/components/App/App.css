@@ -8,11 +8,13 @@ body {
 
 #App {
   height: 100vh;
+  overflow:auto;
 }
 
 #page-wrap {
   text-align: center;
   overflow: auto;
+  padding-bottom:50px;
 }
 
 .bm-item {
