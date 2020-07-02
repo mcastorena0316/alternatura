@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Pedidos from '../Pedidos';
 import Header from '../Header';
+import Login from '../Login';
 import Sidebar from '../Sidebar';
 import Main from '../Main';
 import Footer from '../Footer';
@@ -15,7 +16,7 @@ const App = () => (
   <Router>
     <div className="App" id="App">
       <Header />
-      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+      <Sidebar />
       <Footer />
       <Switch>
         <Route
@@ -29,6 +30,11 @@ const App = () => (
           exact
           path="/pedidos"
           render={() => <Pedidos />}
+        />
+        <Route
+          exact
+          path="/login"
+          render={() => <Login />}
         />
       </Switch>
     </div>
