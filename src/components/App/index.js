@@ -7,6 +7,7 @@ import {
 import Pedidos from '../Pedidos';
 import Header from '../Header';
 import Login from '../Login';
+import Signin from '../Signin';
 import Sidebar from '../Sidebar';
 import Main from '../Main';
 import Footer from '../Footer';
@@ -35,6 +36,11 @@ const App = () => (
           exact
           path="/login"
           render={() => <Login />}
+        />
+        <Route
+          exact
+          path="/signin"
+          render={() => <Signin />}
         />
       </Switch>
     </div>

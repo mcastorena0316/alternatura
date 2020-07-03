@@ -62,6 +62,10 @@ class SideBar extends React.Component {
             Login
           </Link>
 
+          <Link to="/signin" className="menu-item">
+            Signin
+          </Link>
+
           <a className="menu-item" href="/vue">
             Tu Cuenta
           </a>

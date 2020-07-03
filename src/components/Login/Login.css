@@ -4,7 +4,8 @@
     width: 40%;
     margin: 0 auto;
     border-radius: 10px;
-    padding-bottom: 4px
+    padding-bottom: 4px;
+    min-height:68vh
 }
 
 .login h3 {
@@ -34,7 +35,7 @@
 
 .form-p {
     width: 45%;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     text-align: start;
 }
 
